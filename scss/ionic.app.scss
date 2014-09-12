@@ -1,0 +1,50 @@
+/*
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+*/
+
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+$positive: #537bd1 !default;
+
+.button-bar .button {
+    border-color: #739cf1;
+}
+
+.button-bar .active {
+    background-color: #739cf1 !important;
+    border-color: #739cf1 !important;
+    color: #fff !important;
+    box-shadow: none !important; //inset 0px 1px 3px rgba(0, 0, 0, 0.15) !important;
+}
+
+.tabs-striped.tabs-positive .tab-item {
+    color: rgba(83, 123, 209, 0.6) !important;
+}
+
+.tabs-striped.tabs-positive .tab-item-active {
+    color: rgba(83, 123, 209, 1) !important;
+}
+
+.list {
+    padding-top: 0 !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.list > .item {
+    border-right: 0;
+    border-left: 0;
+}
+
+@import "www/lib/ionic/scss/ionic";
+

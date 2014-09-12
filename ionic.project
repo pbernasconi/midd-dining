@@ -1,0 +1,8 @@
+{
+  "name": "midd-menu",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
+}

@@ -1,0 +1,50 @@
+<ion-view title="Today">
+
+    <ion-header-bar class="bar bar-subheader">
+        <div class="button-bar">
+            <a class="button" ng-class="{'active': isActive(0)}" ng-click="setActive(0)">Breakfast</a>
+            <a class="button" ng-class="{'active': isActive(1)}" ng-click="setActive(1)">Lunch</a>
+            <a class="button" ng-class="{'active': isActive(2)}" ng-click="setActive(2)">Dinner</a>
+        </div>
+    </ion-header-bar>
+
+    <ion-content class="fade-in-not-out" has-bouncing="true">
+
+        <div ng-if="isActive(0)">
+            <ion-list>
+                <ion-item ng-repeat="item in menu.breakfast">
+                    {{item}}
+                </ion-item>
+            </ion-list>
+            <div class="card" ng-show="bfastEmpty">
+                <div class="item">
+                    Breakfast is not served today
+                </div>
+            </div>
+        </div>
+        <div ng-if="isActive(1)">
+            <ion-list>
+                <ion-item ng-repeat="item in menu.lunch">
+                    {{item}}
+                </ion-item>
+            </ion-list>
+            <div class="card" ng-show="lunchEmpty">
+                <div class="item">
+                    Lunch is not served today
+                </div>
+            </div>
+        </div>
+        <div ng-if="isActive(2)">
+            <ion-list>
+                <ion-item ng-repeat="item in menu.dinner">
+                    {{item}}
+                </ion-item>
+            </ion-list>
+            <div class="card" ng-show="dinnerEmpty">
+                <div class="item">
+                    Dinner is not served today
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
